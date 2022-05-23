@@ -11,17 +11,11 @@ const listamail = ["rufy@gmail.com", "zoro@gmail.com","nami@gmail.com", "usopp@g
 let existingmail;
 
 for (let i = 0; i < listamail.length; i++) {
-    
-    existingmail = listamail[i]
-    
+    existingmail === i
 }
 
-    if (usermail = existingmail)
-    {    
-        alert("Andiamo a cercare il One Piece!")
-        console.log("Andiamo a cercare il One Piece!")
-    }
-    else {
-        alert("Non fai parte della ciurma di Cappello di paglia!")
-        console.log("Non fai parte della ciurma di Cappello di paglia!")
-    }
+if (existingmail === usermail) {
+    alert("Andiamo a cercare il One Piece!")
+} else {
+    alert("Non fai parte della ciurma di Cappello di Paglia")
+}
