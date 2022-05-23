@@ -4,3 +4,17 @@
 // Prima di partire a scrivere codice poniamoci qualche domanda:
 // C’è forse un array da qualche parte?
 // // Se dobbiamo confrontare qualcosa che “cosa” ci serve?
+
+const numeridadi = [1, 2, 3, 4, 5, 6];
+
+const firstplayer = Math.floor(Math.random() * numeridadi.length);
+
+const secondplayer = Math.floor(Math.random() * numeridadi.length);
+
+if (secondplayer > firstplayer) {
+    console.log(firstplayer, secondplayer)
+    console.log("Second Player Wins!")
+} else {
+    console.log(firstplayer, secondplayer)
+    console.log("First Player Wins!")
+}
