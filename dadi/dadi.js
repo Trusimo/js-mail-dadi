@@ -7,9 +7,9 @@
 
 const numeridadi = [1, 2, 3, 4, 5, 6];
 
-const firstplayer = Math.floor(Math.random() * numeridadi.length);
+const firstplayer = Math.floor(Math.random() * numeridadi.length) + 1;
 
-const secondplayer = Math.floor(Math.random() * numeridadi.length);
+const secondplayer = Math.floor(Math.random() * numeridadi.length) + 1;
 
 if (secondplayer > firstplayer) {
     console.log(firstplayer, secondplayer)
@@ -18,5 +18,18 @@ if (secondplayer > firstplayer) {
     console.log(firstplayer, secondplayer)
     console.log("First Player Wins!")
 } else if (firstplayer === secondplayer) {
+    console.log(firstplayer, secondplayer)
     console.log("Parità!")
 }
+
+// CORREZIONE IN CLASSE
+// const firstplayer = [];
+// const secondplayer = [];
+
+// for (let i= 1; i <= 6; i++) {
+//     const numberfirst = Math.floor(Math.random() * 6) + 1;
+//     const numbersecond = Math.floor(Math.random() * 6) + 1;
+//      
+//     firstplayer.push(numberfirst)
+//     secondplayer.push(numbersecond)
+// }
