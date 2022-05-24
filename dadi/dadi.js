@@ -14,7 +14,9 @@ const secondplayer = Math.floor(Math.random() * numeridadi.length);
 if (secondplayer > firstplayer) {
     console.log(firstplayer, secondplayer)
     console.log("Second Player Wins!")
-} else {
+} else if (firstplayer > secondplayer) {
     console.log(firstplayer, secondplayer)
     console.log("First Player Wins!")
+} else if (firstplayer === secondplayer) {
+    console.log("Parità!")
 }
